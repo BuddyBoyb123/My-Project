@@ -1,0 +1,161 @@
+/*Its the main CSS and This CSS is for Laptops and Computer*/
+input{
+    margin-left: 1.5%;
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    font-size: 100%;
+    color: black;
+    border: none;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    outline: none;
+    border-radius: 100px;
+    padding: 5%,5%;
+}
+img{
+    width: clamp(55px,50px,70px);
+    height:clamp(55px,50px,70px);
+    border-radius: 100px;
+    border: 2px solid black;
+    margin-top: 5px;}
+.download{
+    border-radius: 100px;
+    height: 100%;
+    width: 20%;
+    display:block;
+    font-weight: bold;
+    font-size: large;
+    font-family: "Roboto",sans-serif;
+    background-color: orange;
+    cursor: pointer;
+    outline: none;
+    border-color: none;
+    border: 1px solid orange;
+}
+
+.download:hover{
+    background-color: lightsalmon;
+}
+
+.inner{
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    border: 2px solid orange;
+    outline: none;
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 100px ;
+    transform: translate(-50%,-50%);
+    width: 55%;
+    height: 6%;
+}
+
+.out{
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    }                                              
+h1{
+    margin-right: 1%;
+    font-family:monospace;
+}
+body{
+    background:url("bg.jpeg") no-repeat center center/cover;
+    height: 100vh;
+    margin: 0%;}
+main{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+
+/* For Tablets  */
+@media(min-width: 600px) and (max-width : 1024px)
+{
+    input{
+        margin-left: 2%;
+        width: 100%;
+        height: auto;
+        cursor: none;
+        font-size: 25px;
+        padding: 5%,5%;
+    }
+    img{
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        border: 4px solid black;}
+    .download{
+        height: 100%;
+        width: 35%;
+        cursor: none;
+        height: 100%;
+        display:block;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
+    .inner{
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        top: 45%;
+        left: 49%;
+        width: 85%;
+        height: 5%;
+    }
+    
+    h1
+    {   margin-right: 2%;
+        font-size: 40px;
+        
+    }
+
+}
+/*-------------------*/
+/*This is for Mobiles */
+@media (min-width: 320px) and (max-width: 600px){
+    input{
+        margin-left: 2%;
+        width: 100%;
+        height: auto;
+        font-size: 10px;
+        cursor: none;
+        padding: 5%,5%;
+    }
+    img{
+        width: 55px;
+        height: 55px;
+        border: 3px solid black;
+        margin-top: 7px;}
+
+    .download{
+        height: 100%;
+        width: 30%;
+        font-size: 15px;
+        cursor:none;
+        }
+    
+    .inner{
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        top: 45%;
+        left: 49%;
+        width: 90%;
+        height: 5%;
+    }
+
+    h1{
+        margin-right: 2%;
+        font-size: 30px;
+    }
+    
+}
+/*End for Mobile */
+/*Done*/
